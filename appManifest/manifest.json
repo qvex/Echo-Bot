@@ -1,0 +1,61 @@
+
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.1",
+  "id": "1f84896a-9cde-4738-a8d6-6214619e06d2",
+  "developer": {
+    "name": "Invimatic Technologies",
+    "websiteUrl": "https://www.invimatic.com",
+    "privacyUrl": "https://www.invimatic.com/privacy",
+    "termsOfUseUrl": "https://www.invimatic.com/terms"
+  },
+  "name": {
+    "short": "Echo Bot",
+    "full": "Microsoft Teams Echo Bot"
+  },
+  "description": {
+    "short": "A bot that echoes your messages back to you",
+    "full": "This bot demonstrates basic message handling by echoing back any message you send to it. Perfect for testing and learning about Teams bots."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "1f84896a-9cde-4738-a8d6-6214619e06d2",
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupChat"],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Show help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "www.invimatic.com",
+    "desired-ready-rat.ngrok-free.app"
+  ],
+  "webApplicationInfo": {
+    "id": "1f84896a-9cde-4738-a8d6-6214619e06d2",
+    "resource": "https://RscPermission"
+  }
+}
